@@ -7,7 +7,6 @@ import Start from "./components/Layout/Start/Start";
 import Time from "./components/Layout/Time/Time";
 import Yrmat from "./components/Layout/Yrmat/Yrmat";
 import MusicPlayer from "./components/Layout/MusicPlayer/MusicPlayer";
-import Footer from "./components/Layout/footer/Footer";
 import First from "./components/Layout/first/first";
 
 function App() {
