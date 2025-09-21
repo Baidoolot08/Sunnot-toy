@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import bag from "../../../../src/assets/image/first-bag.jpeg";
-import "./First.scss";
+import "./Name.scss";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
-const First = () => {
+const Name = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -31,4 +31,4 @@ const First = () => {
     </section>
   );
 };
-export default First;
+export default Name;
