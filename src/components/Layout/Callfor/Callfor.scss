@@ -36,14 +36,14 @@
 
         p {
           text-align: center;
-          font-size: clamp(14px, 2.5vw, 30px);
-          line-height: clamp(20px, 3.5vw, 45px);
+          font-size: clamp(18px, 4vw, 36px); // увеличен минимальный размер
+          line-height: clamp(24px, 5vw, 48px);
           font-family: "Pacifico", cursive;
         }
 
         h1 {
           margin-top: clamp(30px, 6vw, 100px);
-          font-size: clamp(24px, 5vw, 50px);
+          font-size: clamp(28px, 5vw, 50px);
           text-align: center;
           font-family: "Pacifico", cursive;
         }
@@ -61,11 +61,12 @@
             border-radius: 20px;
             display: block;
           }
+
           h2 {
             position: absolute;
-            top: 2%; // или clamp если нужно
-            left: 67%; // фиксируем относительное положение
-            transform: translateY(-50%); // только вертикально центрируем
+            top: 2%;
+            left: 67%;
+            transform: translateY(-50%);
             font-family: "Great Vibes", cursive;
             font-size: clamp(24px, 6vw, 58px);
             color: black;
@@ -102,6 +103,40 @@
     100% {
       transform: scale(1);
       box-shadow: 0 0 0 rgba(225, 29, 72, 0);
+    }
+  }
+
+  // Адаптивность
+  @media (max-width: 768px) {
+    #callfor p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    #callfor h1 {
+      font-size: 32px;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #callfor p {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    #callfor h1 {
+      font-size: 28px;
+      margin-top: 15px;
+    }
+
+    .callfor--box__text--imganima h2 {
+      font-size: 28px;
+      left: 65%;
+    }
+
+    .callfor--box__text--imganima .icon {
+      font-size: 40px;
     }
   }
 }
