@@ -1,24 +1,3 @@
-// import React from "react";
-// import "./Header.scss";
-
-// const Header = () => {
-//   return (
-//     <div id="header">
-//       <div className="container">
-//         <div className="header">
-//             <h1 href="#">Башкы бет</h1>
-//           <div className="header--nav">
-//             <a href="#">Той жөнүндө</a>
-//             <a href="#">Дареги</a>
-//             <a href="#">Байланыштар</a>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;
 import React from "react";
 import "./Header.scss";
 
@@ -62,20 +41,41 @@ const Header = () => {
               <a
                 className="nav-link active"
                 aria-current="page"
-                href="#hero"
+                href="#callfor"
                 onClick={scrollToSection}
               >
-                Той жөнүндө
+                Той жөнүндө,
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#place" onClick={scrollToSection}>
-                Дареги
+                Дареги,
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#start" onClick={scrollToSection}>
+                Башталуу,
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#start" onClick={scrollToSection}>
-                Башталуу
+              <a
+                className="nav-link active"
+                aria-current="page"
+                href="#time"
+                onClick={scrollToSection}
+              >
+                Тойго канча убакыт калды,
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link active"
+                aria-current="page"
+                href="#request"
+                onClick={scrollToSection}
+              >
+                Анкета
               </a>
             </li>
           </ul>

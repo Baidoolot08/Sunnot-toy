@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap");
 
 #yrmat {
   padding: 80px 0;
@@ -12,7 +11,8 @@
     gap: 30px 0;
     text-align: center;
 
-    h1, h2 {
+    h1,
+    h2 {
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.8s ease-out;
@@ -31,8 +31,8 @@
 
     h2 {
       font-size: 55px;
-      font-family: 'Great Vibes', cursive;
-      color: #ffdfb9;
+      font-family: "Great Vibes", cursive;
+      color: white;
     }
   }
 }

@@ -1,7 +1,7 @@
-import { CiHeart } from "react-icons/ci";
 import React, { useEffect } from "react";
 import "./Callfor.scss";
 import may from "../../../assets/image/may-2026.webp";
+import { FaRegCircle } from "react-icons/fa";
 
 const Callfor = () => {
   useEffect(() => {
@@ -13,9 +13,7 @@ const Callfor = () => {
           }
         });
       },
-      {
-        threshold: 0.2,
-      }
+      { threshold: 0.2 }
     );
 
     const elements = document.querySelectorAll(
@@ -33,14 +31,17 @@ const Callfor = () => {
           <div className="callfor--box">
             <div className="callfor--box__text">
               <p>
-                Үйлөнүү үлпөт тоюна арналган, <br /> салтанаттуу кечебизге
-                келип, <br /> ак батаныздарды берип, кадырлуу <br /> коногубуз
-                болуп кетүүгө чакырабыз.
+                Сүннөт тоюна арналган, <br /> салтанаттуу кечебизге келип,{" "}
+                <br />
+                ак батаныздарды берип, кадырлуу <br /> коногубуз болуп кетүүгө
+                чакырабыз.
               </p>
               <h1>Биз сиздерди күтөбүз!</h1>
+
               <div className="callfor--box__text--imganima">
+                <h2>2025</h2>
                 <i>
-                  <CiHeart className="icon" />
+                  <FaRegCircle className="icon" />
                 </i>
                 <img src={may} alt="Май месяц" />
               </div>

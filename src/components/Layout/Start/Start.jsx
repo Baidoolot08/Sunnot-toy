@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import "./Start.scss";
 import { PiMapPinArea } from "react-icons/pi";
@@ -39,11 +38,11 @@ const Start = () => {
                 <PiMapPinArea />
               </a>
               <div className="start--width__flex--text">
-                <h1>18:00</h1>
+                <h1>16:00</h1>
                 <h2>Конокторду чакыруу</h2>
                 <p>
-                  Той салтанатка  жагымдуу жылмаюуңузду <br /> жана
-                   жакшы маанайыңызды ала келиңиз.
+                  Той салтанатка жагымдуу жылмаюуңузду <br /> жана жакшы
+                  маанайыңызды ала келиңиз.
                 </p>
               </div>
             </div>
@@ -52,7 +51,7 @@ const Start = () => {
                 <BiDish />
               </a>
               <div className="start--width__flex--text">
-                <h1>19:00</h1>
+                <h1>17:30</h1>
                 <p>
                   Даамдуу тамак-аш, бий <br /> жана кызыктуу убакыт.
                 </p>

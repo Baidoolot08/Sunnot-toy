@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { FaPlay, FaPause } from "react-icons/fa";
-import audioFile from "../../../../public/music/arsen.mp3";
+import audioFile from "../../../../public/music/Alem.mp3";
 import "./MusicPlayer.scss";
 
 const MusicPlayer = () => {

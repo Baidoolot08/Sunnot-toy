@@ -11,7 +11,7 @@ const Time = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const targetDate = new Date("May 15 2026 18:00:00");
+      const targetDate = new Date("October 7 2025 16:00:00");
       const now = new Date();
       const diff = targetDate - now;
 
@@ -68,7 +68,7 @@ const Time = () => {
     <div id="time">
       <div className="container">
         <div className="time">
-          <h1>Үйлөнүү тоюна чейин</h1>
+          <h1>Сүннөт тоюна чейин</h1>
           <div className="time--flex">
             <div className="time--flex__count">
               <h2>{timeLeft.days}</h2>

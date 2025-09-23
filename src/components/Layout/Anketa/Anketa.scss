@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-size: cover;
   padding: 50px 0;
 
@@ -22,10 +21,13 @@
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
       border: 1px solid rgba(255, 215, 0, 0.4);
       backdrop-filter: blur(8px);
-
       h1 {
         font-family: "Great Vibes", cursive;
-        font-size: 58px;
+        font-size: clamp(
+          28px,
+          6vw,
+          58px
+        ); // ✅ Минимум 28px, максимум 58px, экранга жараша
         margin-bottom: 25px;
         color: gold;
         text-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
@@ -59,7 +61,6 @@
     }
   }
 
-  /* LUXURY STYLE for modal */
   .logout-modal {
     position: fixed;
     top: 0;
@@ -108,7 +109,8 @@
         }
       }
 
-      input[type="text"] {
+      input,
+      select {
         padding: 14px 18px;
         font-size: 16px;
         border-radius: 10px;
@@ -173,24 +175,69 @@
     }
   }
 
-  /* 🔥 Анимации */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+  /* 📱 Адаптация */
+  @media (max-width: 768px) {
+    .request {
+      padding: 35px 20px;
+
+      h1 {
+        font-size: 42px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 12px 28px;
+      }
     }
-    to {
-      opacity: 1;
+
+    .logout-modal__content {
+      padding: 30px 20px;
+    }
+
+    .logout-modal__buttons input[type="text"] {
+      font-size: 15px;
+      padding: 12px;
     }
   }
 
-  @keyframes scaleIn {
-    from {
-      transform: scale(0.85);
-      opacity: 0;
+  @media (max-width: 480px) {
+    .request {
+      padding: 25px 15px;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 10px 22px;
+      }
     }
-    to {
-      transform: scale(1);
-      opacity: 1;
+
+    .logout-modal__content {
+      padding: 25px 15px;
+    }
+
+    .logout-modal__buttons input[type="text"] {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .logout-modal__buttons label {
+      font-size: 15px;
+    }
+
+    .logout-modal button {
+      font-size: 15px;
+      padding: 12px 25px;
     }
   }
 }

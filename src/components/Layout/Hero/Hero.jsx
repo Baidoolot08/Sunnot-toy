@@ -1,5 +1,8 @@
+// Hero.jsx
 import React, { useEffect, useRef, useState } from "react";
 import "./Hero.scss";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+
 const Hero = () => {
   const heroRef = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -37,12 +40,15 @@ const Hero = () => {
               Биздин сыйлуу конокторубуз
             </h2>
             <h3 className={visible ? "fadeInUp delay-3" : ""}>
-              Сиздерди балдарыбыз
+              Сиздерди балабыз
             </h3>
-            <h1 className={visible ? "fadeInUp delay-4" : ""}>
-              Ербол & Бегайым
-            </h1>
-            <h4 className={visible ? "fadeInUp delay-5" : ""}>15.05.2026</h4>
+            <h1 className={visible ? "fadeInUp delay-4" : ""}>Амирхан</h1>
+            {/* Дата внизу контейнера */}
+            <h4 className={visible ? "fadeInUp delay-5" : ""}>7.10.2025</h4>
+            {/* Стрелка теперь перед датой */}
+            <div className="icons">
+              <MdKeyboardDoubleArrowDown />
+            </div>
           </div>
         </div>
       </div>

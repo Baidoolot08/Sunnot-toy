@@ -8,13 +8,11 @@ import Time from "./components/Layout/Time/Time";
 import Yrmat from "./components/Layout/Yrmat/Yrmat";
 import MusicPlayer from "./components/Layout/MusicPlayer/MusicPlayer";
 import Footer from "./components/Layout/Footer/Footer";
-import First from "./components/Layout/Name/Name";
-
+import Anketa from "./components/Layout/Anketa/Anketa";
 function App() {
   return (
     <>
       <Header />
-      <First />
       <Hero />
       <Callfor />
       <Place />
@@ -22,6 +20,7 @@ function App() {
       <Time />
       <Yrmat />
       <MusicPlayer />
+      <Anketa />
       <Footer />
     </>
   );

@@ -25,7 +25,7 @@ const Yrmat = () => {
       <div className="container">
         <div className="yrmat">
           <h1>Урматтоо менен</h1>
-          <h2>Бегали & Миргуль</h2>
+          <h2> Байаман & Алина</h2>
         </div>
       </div>
     </div>
