@@ -11,7 +11,7 @@ const Time = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const targetDate = new Date("October 7 2025 16:00:00");
+      const targetDate = new Date("October 27 2025 16:00:00");
       const now = new Date();
       const diff = targetDate - now;
 

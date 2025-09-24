@@ -36,8 +36,8 @@
 
         p {
           text-align: center;
-          font-size: clamp(18px, 4vw, 36px); // увеличен минимальный размер
-          line-height: clamp(24px, 5vw, 48px);
+          font-size: clamp(25px, 4.5vw, 36px); // минималдуу 25px
+          line-height: clamp(30px, 5vw, 48px);
           font-family: "Pacifico", cursive;
         }
 
@@ -76,8 +76,8 @@
 
           .icon {
             position: absolute;
-            top: clamp(45%, 48%, 50%);
-            left: clamp(15%, 18%, 20%);
+            top: clamp(84%, 48%, 50%);
+            left: calc(5%);
             transform: translate(-50%);
             font-size: clamp(28px, 8vw, 70px);
             color: #e11d48;
@@ -106,11 +106,11 @@
     }
   }
 
-  // Адаптивность
+  /* 📱 Адаптив */
   @media (max-width: 768px) {
     #callfor p {
-      font-size: 20px;
-      line-height: 28px;
+      font-size: 22px;
+      line-height: 30px;
     }
 
     #callfor h1 {
@@ -121,8 +121,8 @@
 
   @media (max-width: 480px) {
     #callfor p {
-      font-size: 22px;
-      line-height: 30px;
+      font-size: 25px; // телефондо да чоң, окула турган
+      line-height: 34px;
     }
 
     #callfor h1 {

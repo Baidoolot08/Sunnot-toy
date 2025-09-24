@@ -44,7 +44,7 @@ const Hero = () => {
             </h3>
             <h1 className={visible ? "fadeInUp delay-4" : ""}>Амирхан</h1>
             {/* Дата внизу контейнера */}
-            <h4 className={visible ? "fadeInUp delay-5" : ""}>7.10.2025</h4>
+            <h4 className={visible ? "fadeInUp delay-5" : ""}>27.10.2025</h4>
             {/* Стрелка теперь перед датой */}
             <div className="icons">
               <MdKeyboardDoubleArrowDown />
