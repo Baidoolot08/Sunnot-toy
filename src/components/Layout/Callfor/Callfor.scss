@@ -36,16 +36,16 @@
 
         p {
           text-align: center;
-          font-size: clamp(25px, 4.5vw, 36px); // минималдуу 25px
+          font-size: clamp(25px, 4.5vw, 36px);
           line-height: clamp(30px, 5vw, 48px);
-          font-family: "Pacifico", cursive;
+          font-family: "Playfair Display", serif;
         }
 
         h1 {
           margin-top: clamp(30px, 6vw, 100px);
           font-size: clamp(28px, 5vw, 50px);
           text-align: center;
-          font-family: "Pacifico", cursive;
+          font-family: "Playfair Display", serif;
         }
 
         &--imganima {
@@ -121,7 +121,7 @@
 
   @media (max-width: 480px) {
     #callfor p {
-      font-size: 25px; // телефондо да чоң, окула турган
+      font-size: 25px;
       line-height: 34px;
     }
 

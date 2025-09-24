@@ -1,5 +1,6 @@
 #time {
   padding: 60px 0;
+  font-family: "Playfair Display", serif;
 
   h1 {
     text-align: center;
@@ -10,7 +11,7 @@
   }
 
   .time {
-    color: rgb(255, 255, 255);
+    color: white;
 
     &--flex {
       display: flex;
@@ -49,7 +50,7 @@
     }
   }
 
-  // ✅ Адаптив
+  /* 📱 Адаптив */
   @media (max-width: 1024px) {
     h1 {
       font-size: 48px;
@@ -59,7 +60,6 @@
       h2 {
         font-size: 38px;
       }
-
       small {
         font-size: 18px;
       }

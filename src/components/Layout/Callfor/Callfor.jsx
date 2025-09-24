@@ -43,7 +43,7 @@ const Callfor = () => {
                 <i>
                   <FaRegCircle className="icon" />
                 </i>
-                <img src={may} alt="Май месяц" />
+                <img src={may} alt="Май айы" />
               </div>
             </div>
           </div>
